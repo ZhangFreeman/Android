@@ -11,4 +11,4 @@ Fot that I uploaded some of the main feel of the application.
 Take a look.
 
 
-![alt tag](https://github.com/ZhangFreeman/Android/blob/master/images/main.png | width=60 "Main Screen")
+<img src="https://github.com/ZhangFreeman/Android/blob/master/images/main.png" alt="Main Screen" width="200"/>
