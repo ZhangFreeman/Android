@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_small">
+
+    <!--
+    <View
+        android:id="@+id/comment_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:background="#c0c0c0"/>
+-->
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/comment_author_picture"
+            android:layout_width="@dimen/shot_author_picture_size"
+            android:layout_height="@dimen/shot_author_picture_size"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            fresco:placeholderImage="@drawable/user_picture_placeholder"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"/>
+
+    <TextView
+            android:id="@+id/comment_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/comment_author_picture"
+            android:layout_toRightOf="@id/comment_author_picture"
+            style="@style/AppTheme.TextView.2"
+            tools:text="comment author" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/comment_author_name"
+        android:layout_toEndOf="@id/comment_author_picture"
+        android:layout_toRightOf="@id/comment_author_picture"
+        tools:text="comment...\ncomment...\ncomment..."
+        />
+
+    <TextView
+            android:id="@+id/comment_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_content"
+            android:padding="7dp"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            tools:text="3"
+            />
+
+    <ImageButton
+            android:id="@+id/comment_like"
+            android:layout_width="@dimen/shot_action_icon_size"
+            android:layout_height="@dimen/shot_action_icon_size"
+            android:src="@drawable/ic_thumb_up_grey_400_18dp"
+            android:layout_below="@id/comment_content"
+            android:layout_toLeftOf="@id/comment_like_num"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="false"
+            />
+
+</RelativeLayout>

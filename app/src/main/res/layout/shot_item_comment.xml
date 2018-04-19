@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/comment_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/comment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:height="@dimen/shot_action_icon_size"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:text="@string/comment"/>
+
+    <ProgressBar
+        android:id="@+id/comment_loading"
+        android:layout_width="@dimen/loading_progress_bar_size"
+        android:layout_height="@dimen/loading_progress_bar_size"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle" />
+
+
+</LinearLayout>
