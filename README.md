@@ -2,6 +2,7 @@
 So this is my trainning project about Java and Android.
 It is a client side application for Dribbble community.
 The design is mainly refer to the homepage of it.
+I did not developmented it on github, I uploaded it only for a quick demonstration.
 
 Unfortunately, the Dribbble community decided to turn off the api v1 and the new version does not support
 for free view of the works on it(from the end of march 2018).
@@ -23,17 +24,22 @@ Shot Detail:
 
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/shot_detail.png" alt="Shot Detail" width="300"/>
 Comments:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/comments.png" alt="Comments" width="300"/>
 User:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/user.png" alt="User" width="300"/>
 Followes:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/followed.png" alt="Followes users" width="300"/>
 Buckets:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/buckets.png" alt="Buckets" width="300"/>
 Navigation drawer:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/navigation_drawer.png" alt="Navigation drawer" width="300"/>
