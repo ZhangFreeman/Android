@@ -11,6 +11,7 @@ Fot that I uploaded some of the main feel of the application.
 Take a look.
 
 Main screen:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/main.png" alt="Main Screen" width="300"/>
 
 
