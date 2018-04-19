@@ -11,13 +11,16 @@ Fot that I uploaded some of the main feel of the application.
 Take a look.
 
 Main screen:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/main.png" alt="Main Screen" width="300"/>
 Likes:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/likes.png" alt="Likes" width="300"/>
 Shot Detail:
-<br>
+
+
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/shot_detail.png" alt="Shot Detail" width="300"/>
 Comments:
 <br>
