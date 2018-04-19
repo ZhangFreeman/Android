@@ -14,10 +14,14 @@ Main screen:
 <br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/main.png" alt="Main Screen" width="300"/>
 
-
+Main screen:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/likes.png" alt="Likes" width="300"/>
 
+Main screen:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/shot_detail.png" alt="Shot Detail" width="300"/>
+Main screen:
 
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/comments.png" alt="Comments" width="300"/>
 
