@@ -13,22 +13,24 @@ Take a look.
 Main screen:
 <br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/main.png" alt="Main Screen" width="300"/>
-
-Main screen:
+Likes:
 <br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/likes.png" alt="Likes" width="300"/>
-
-Main screen:
+Shot Detail:
 <br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/shot_detail.png" alt="Shot Detail" width="300"/>
-Main screen:
-
+Comments:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/comments.png" alt="Comments" width="300"/>
-
+User:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/user.png" alt="User" width="300"/>
-
+Followes:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/followed.png" alt="Followes users" width="300"/>
-
+Buckets:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/buckets.png" alt="Buckets" width="300"/>
-
+Navigation drawer:
+<br>
 <img src="https://github.com/ZhangFreeman/Android/blob/master/images/navigation_drawer.png" alt="Navigation drawer" width="300"/>
