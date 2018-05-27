@@ -59,10 +59,7 @@ public class MainActivity extends AppCompatActivity {
             Fragment fragment = null;
             int preNavItemId = savedInstanceState.getInt(saveState);
             switch (preNavItemId) {
-                case R.id.drawer_item_home:
-                    fragment = ShotListFragment.newInstance(ShotListFragment.LIST_TYPE_ALL);
-                    setTitle(R.string.title_home);
-                    break;
+
                 case R.id.drawer_item_likes:
                     fragment = ShotListFragment.newInstance(ShotListFragment.LIST_TYPE_LIKE);
                     setTitle(R.string.title_likes);
@@ -71,6 +68,19 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.drawer_item_buckets:
                     fragment = BucketListFragment.newInstance(false, null);
                     setTitle(R.string.title_buckets);
+                    break;
+                case R.id.drawer_item_follows:
+                    fragment = ShotListFragment.newInstance(ShotListFragment.LIST_TYPE_FOLLOW);
+                    setTitle(R.string.title_follow);
+                    //setTitle("Test");
+                    break;
+                case R.id.drawer_item_followed:
+                    fragment = FollowListFragment.newInstance();
+                    setTitle(R.string.title_following);
+                    break;
+                default:
+                    fragment = ShotListFragment.newInstance(ShotListFragment.LIST_TYPE_ALL);
+                    setTitle(R.string.title_home);
                     break;
             }
             if (fragment != null) {
@@ -131,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         );
 
         drawerLayout.setDrawerListener(drawerToggle);
+        //drawerLayout.addDrawerListener(drawerToggle);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
