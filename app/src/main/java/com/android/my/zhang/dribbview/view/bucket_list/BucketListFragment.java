@@ -176,7 +176,7 @@ public class BucketListFragment extends Fragment {
 
         @Override
         protected List<Bucket> doInBackground(Void... params) {
-            // this method is executed on non-UI thread
+
             try {
                 return Dribbble.getUserBuckets(page);
             } catch (IOException | JsonSyntaxException e) {
@@ -187,7 +187,7 @@ public class BucketListFragment extends Fragment {
 
         @Override
         protected void onPostExecute(List<Bucket> buckets) {
-            // this method is executed on UI thread!!!!
+            
             if (buckets != null) {
                 if (isChoosingMode) {
                     for (Bucket bucket : buckets) {
