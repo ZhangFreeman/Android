@@ -187,7 +187,7 @@ public class BucketListFragment extends Fragment {
 
         @Override
         protected void onPostExecute(List<Bucket> buckets) {
-            
+
             if (buckets != null) {
                 if (isChoosingMode) {
                     for (Bucket bucket : buckets) {
