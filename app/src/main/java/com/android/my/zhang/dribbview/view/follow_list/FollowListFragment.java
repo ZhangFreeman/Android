@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.os.AsyncTaskCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -52,10 +51,8 @@ public class FollowListFragment extends Fragment {
         adapter = new FollowListAdapter(new ArrayList<User>(), new FollowListAdapter.LoadMoreListener() {
             @Override
             public void onLoadMore() {
-                // this method will be called when the RecyclerView is displayed
-                // page starts from 1
-                AsyncTaskCompat.executeParallel(
-                        new LoadUserTask());
+
+                new LoadUserTask().execute();
             }
         });
         recyclerView.setAdapter(adapter);
@@ -70,7 +67,7 @@ public class FollowListFragment extends Fragment {
         }
         @Override
         protected List<User> doInBackground(Void... params) {
-            // this method is executed on non-UI thread
+
             int page = adapter.getDataCount() / Dribbble.COUNT_PER_PAGE + 1;
             try {
                 return Dribbble.getFollowUsers(page);
