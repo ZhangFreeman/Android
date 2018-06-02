@@ -9,7 +9,6 @@ import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.os.AsyncTaskCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.util.Log;
@@ -229,7 +228,7 @@ class ShotAdapter extends RecyclerView.Adapter {
     }
 
     private void loadComments(CommentViewHolder layout) {
-        AsyncTaskCompat.executeParallel(new loadCommentTask(layout));
+        new loadCommentTask(layout).execute();
         //setupComments(layout);
     }
 
@@ -246,9 +245,9 @@ class ShotAdapter extends RecyclerView.Adapter {
     private void likeClick() {
         if(like != null) {
             if (like) {
-                AsyncTaskCompat.executeParallel(new deleteLikeTask());
+                new deleteLikeTask().execute();
             } else {
-                AsyncTaskCompat.executeParallel(new LikeTask());
+                new LikeTask().execute();
             }
         }
     }
